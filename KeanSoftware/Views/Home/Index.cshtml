@@ -2,50 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 <style>
-font-family: 'Roboto', sans-serif;
-    /* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px black;
-    border-radius: 10px;
-    scroll-margin-inline-start: 1rem;
-}
-
-.Title{
-    font-size: 200px;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    color: ghostwhite;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0;
-    line-height: 1.25em;
-    font-style: normal;
-
-}
-h1 {
-    font-size: 70px;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+        /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px black;
+        border-radius: 10px;
+        scroll-margin-inline-start: 1rem;
+    }
+    .Title{
+        font-size: 200px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        font-style: normal;
+        color: ghostwhite;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0;
+        line-height: 1.25em;
+        font-style: normal;
+    }
+    h1 {
+        font-size: 70px;
+        text-align: center;
         font-family: "Bebas Neue", serif;
-        font-style:italic;
+        font-style:italic;    
         color: ghostwhite;
     }
 
     
-.header {
-       background: url(https://drive.google.com/file/d/1WlyDsqbu2kWS-VcDIVH2wlnz6HztYpJL/view?usp=drive_link) repeat-x center center;
-        background-size: cover;
-        text-align: center;
-        align-content: center;
-        background-repeat: repeat-x;
-        background-size: 100% 100%;
-        min-width: 100vh;
+    .header {
+            background: url(https://drive.google.com/file/d/1WlyDsqbu2kWS-VcDIVH2wlnz6HztYpJL/view?usp=drive_link) repeat-x center center;
+            background-size: cover;
+            text-align: center;
+            align-content: center;
+            background-repeat: repeat-x;
+            background-size: 100% 100%;
+            min-width: 100vh;
     }
 
-    .flex {
-        display: flex;
-        justify-content: space-between;
-    }
     .container {
         margin: 0 auto;
         max-width: 1200px;
@@ -54,12 +48,14 @@ h1 {
 
     .header .container {
         position: relative;
-        top: 0px;
+        top: 0px;    
     }
-    .containerHorizontal{
+    
+    .containerHorizontal{    
         display: flex;
         justify-content: space-between; /* Adjusts spacing between items */
     }
+    
     .containerScrollHorizontal{
         display: grid;
         grid-auto-flow: column;
@@ -72,54 +68,49 @@ h1 {
         width:200vw;
         justify-content: center;
         align-items: center;
-        transform: translate(-30%,5%);
+        transform: translate(-30%,5%);    
     }   
+    
     .containerButton{
         display: inline-block;
         position: relative;
         text-align: center;
         color: white;
         flex: 0  1 auto; /* Each item takes up equal space */
-        padding: 10px;
-
-    }
-
+        padding: 10px;    
+    }    
     .centeredText {
         width:500px;
         position: absolute;
         top: 0%;
         left: 0%;
-        white-space: pre-wrap;
-
+        white-space: pre-wrap;    
     }
 
+    
     ::-webkit-scrollbar {
         width: 20px;
-        border-radius: 10px;
+        border-radius: 10px;    
     }
-
-
-    /* Track */
+        /* Track */
     ::-webkit-scrollbar-track {
         background: black;
     }
 
-    /* Handle */
+        /* Handle */
     ::-webkit-scrollbar-thumb {
         background: linear-gradient(-45deg, #E101A9, red 50%, blue 90%, green 100%);
         outline-color:ghostwhite;
         outline-width:5px;
         overflow-x:hidden;
-        border-radius: 10px;
+        border-radius: 10px; 
     }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(-45deg, #E101A9, ghostwhite 100%);
-        }
-
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {            
+        background: linear-gradient(-45deg, #E101A9, ghostwhite 100%);
+    }
 </style>
-<html>
+<!--Refrences-->
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,6 +127,7 @@ h1 {
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<!--Title-->
 <div class="Title" style=" white-space: nowrap; font-style: normal; ">
 <img src="~/Untitled design (5).png" alt="Image Alt Text" style="align:center; width: 1500px; height: 400px; transform: translate(-10%, 0%); outline:solid; outline-width: 5px; outline-color: ghostwhite;">
     <div class="containerButton">
@@ -144,6 +136,7 @@ h1 {
         </div>
     </div>
 </div>
+<!--Body-->
 <body style="background-color: black; overflow-x:hidden;">
     <h1>Sean Kean's Professional Website'</h1>
     <div class="Title" style=" white-space: nowrap; font-style: normal; ">
@@ -158,7 +151,8 @@ h1 {
         </div>
     </div>
 
-    <div class="Title" style="font-size:150px; color: ghostwhite">Blogs</div>
+<!--Blog-->
+<div class="Title" style="font-size:150px; color: ghostwhite">Blogs</div>
     <div class="containerScrollHorizontal">
         <div class="containerButton">
             <img src="~/Copy of Untitled (2).png" alt="Image Alt Text" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;">
@@ -170,22 +164,24 @@ h1 {
         </div>
 
     </div>
-    <div class="Title" style="font-size:150px; color: ghostwhite">Contact Me!!</div>
-    <div class="containerHorizontal">
-   <div class="containerButton">
-        <img src="~/Untitled design (9).png" alt="Image Alt Text" style="outline-style:none; width:250px; height:250px;">
-            <a href="mailto:sgkean24@coe.edu">
-                <h1 style="font-size: 90px; color:ghostwhite;">sgkean24@coe.edu</h1>
-            </a>
-    </div>
-        <div class="containerButton">
-            <img src="~/Untitled design (10).png" alt="Image Alt Text" style="outline-style:none; width:250px; height:250px;">
-                <h1 style="font-size: 90px; color:ghostwhite;">402-517-2060</h1>
+<!--Contacts-->
+   <div class="Title" style="font-size:150px; color: ghostwhite">Contact Me!!</div>
+        <div class="containerHorizontal">
+           <div class="containerButton">
+                <img src="~/Untitled design (9).png" alt="Image Alt Text" style="outline-style:none; width:250px; height:250px;">
+                    <a href="mailto:sgkean24@coe.edu">
+                        <h1 style="font-size: 90px; color:ghostwhite;">sgkean24@coe.edu</h1>
+                    </a>
+            </div>
+            <div class="containerButton">
+                <img src="~/Untitled design (10).png" alt="Image Alt Text" style="outline-style:none; width:250px; height:250px;">
+                    <h1 style="font-size: 90px; color:ghostwhite;">402-517-2060</h1>
+            </div>
         </div>
-</div>
 </body>
-<div class="Title" style=" white-space: nowrap; font-style: normal; ">
 
+<!--About Me-->
+<div class="Title" style=" white-space: nowrap; font-style: normal; ">
     <img src="~/Copy of Untitled (4).png" alt="Image Alt Text" style="align:center; width: 1500px; height: 500px; transform: translate(-10%, 0%); outline-color:ghostwhite; outline-width:5px; outline-style:solid;">
     <div class="containerButton">
         <div class="centeredText" style="top: 25%; transform: translate(-250%, -65%);line-height: 0.99;">
@@ -195,5 +191,3 @@ h1 {
         </div>
     </div>
 </div>
-</div>
-</html>
