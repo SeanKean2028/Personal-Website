@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+font-family: 'Roboto', sans-serif;
+    /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+    scroll-margin-inline-start: 1rem;
+}
+
+.Title{
+    font-size: 200px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    color: ghostwhite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    line-height: 1.25em;
+    font-style: normal;
+
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+        font-family: "Bebas Neue", serif;
+        font-style:italic;
+        color: ghostwhite;
+    }
+
+    .header {
+        background: url(https://drive.google.com/file/d/1WlyDsqbu2kWS-VcDIVH2wlnz6HztYpJL/view?usp=drive_link) repeat-x center center;
+        background-size: cover;
+        text-align: center;
+        align-content: center;
+        background-repeat: repeat-x;
+        background-size: 100% 100%;
+        min-width: 100vh;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 10px;
+    }
+
+    .header .container {
+        position: relative;
+        top: 0px;
+    }
+    .containerHorizontal{
+        display: flex;
+        justify-content: space-between; /* Adjusts spacing between items */
+    }
+    .containerScrollHorizontal{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between; /* Adjusts spacing between items */
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 600px;
+        white-space: nowrap;
+        background: linear-gradient(-45deg, black 70%,  grey 100%, black 130%, black 170%, grey 200%);
+        width:200vw;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-30%,5%);
+    }   
+    .containerButton{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        color: white;
+        flex: 0  1 auto; /* Each item takes up equal space */
+        padding: 10px;
+
+    }
+
+    .centeredText {
+        width:500px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        white-space: pre-wrap;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 20px;
+        border-radius: 10px;
+    }
+
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: black;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(-45deg, #E101A9, red 50%, blue 90%, green 100%);
+        outline-color:ghostwhite;
+        outline-width:5px;
+        overflow-x:hidden;
+        border-radius: 10px;
+    }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(-45deg, #E101A9, ghostwhite 100%);
+        }
+
+</style>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="Title" style=" white-space: nowrap; font-style: normal;">
+    Sean Kean
+</div>
+    <body style="background-color: black; overflow-x:hidden;">
+<!--Portfolio-->
+        <p align="center">
+            <img src="~/Profile.jpg" alt="Profile Of Me" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;">
+        </p>
+        <h1 style="font-size: 35px; padding-top: 4px;">
+            I'm a Freshman at Coe College studying for two majors: Computer science and Mathematics. I have a passion for programming, software engineering, game development and education. My current main project is a website that utilizes various forms of learning styles to advance the learning process of students in computer science, and math. 
+            I’ll do so by creating Games, activities, Projects, and Videos to create a wide array of tools to teach oneself these increasingly difficualt to learn topics. I was born and raised in a small town where I was taught by an amazing teacher who got me into cybersecurity and computer science. His activity based teaching style and his passion for learning made these classes some of the best I’ve ever encountered 
+            in my educational career. His use of lab’s and real life technologies made learning a multitude easier and much much more fun.
+        </h1>
+        <div class="Title" style=" white-space: nowrap; font-style: normal;">
+            Portfolio
+        </div>
+        <h1 style="font-size: 35px; padding-top: 4px;">
+            I've been consitently programming daily since I was in eight grade. I have over half a decade of experience programming in c#, and over half a decade of developing games using Unity. I've completed five games and I am currently working on a multiplayer arcade game. I have around two years experience developing websites using
+            various web development frameworks -ASP.NET MVC, Blazor, and simple html. I have 2 years experience working with AWS (Amazon Web Services). I host websites using IIS and Windows Server 2019. I've taken several classes on cyber security and server management. I'm currently working on developing my knowledge of algorithms using a course
+            on Leetcode. I've been studying data structures for a few months now.
+        </h1>
+        <p align="center">
+
+<!--Loony Lab-->
+        <div class="Title" style=" color: red; white-space: nowrap; font-style: normal; padding-bottom: 15px;">
+            Loony Labrynths
+        </div>
+        </p>
+        <img src="~/Eclispe.png" alt="Eclispe screenshot" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;  width: 100%; height:100%;">
+        <h1 style="font-size: 35px; padding-top: 14px;">
+            Loony Labyrinths is a 2D arcade rogue-like looter game. I really focussed on the graphic design of this game. I prioritized lighting, feel, and post processing effects. I found that use of great sound design and screen shaking immersed the user even deeper into the experience.
+        </h1>
+        <img src="~/Attack.png" alt="Attack screenshot" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;  width: 100%; height:100%;">
+        <h1 style="font-size: 35px; padding-top: 14px;">
+            Adding shadows to most of the 2D elements and adding a screen curve post processing effect gave it a good 2.5D look.
+        </h1>
+        <img src="~/Inventury.png" alt="Inventury screenshot" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;  width: 100%; height:100%;">
+        <img src="~/Low Health.png" alt="Low Health screenshot" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;  width: 100%; height:100%;">
+        <h1 style="font-size: 35px; padding-top: 14px;">
+            Changing the post processing to correlate with the health gave the game even more feel and made it more immersive, however sometimes the vignette got too big and covered some UI elements.
+        </h1>
+
+<!--RED-->
+        <div class="Title" style=" color: red; white-space: nowrap; font-style: normal; padding-bottom: 15px;">
+            RED
+        </div>
+        <img src="~/Red.gif" alt="Red level play through" style="outline-color:ghostwhite; outline-width:5px; outline-style:solid;  width: 100%; height:100%;">
+        <h1 style="font-size: 35px; padding-top: 14px;">
+            Red was my first game. Though it lacked in finer details like post processing, screenshake, lighting, or sound design it played extremly well and is still today one of my most fun games.
+        </h1>
+        <div class="containerButton">
+            <a href="https://bluebeanstudios.itch.io/">
+                <img src="~/badge-color.png" alt="Itch.IO" style="padding-top:30px;">
+                <h1 style="font-size: 35px; padding-top: 14px;">
+                    Find more of my Games on Itch.IO
+                </h1>
+            </a>
+        </div>
+    </body>
+</head>
+</html>

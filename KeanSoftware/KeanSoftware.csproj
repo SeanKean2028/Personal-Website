@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Lessons\Lesson 5\" />
+    <Folder Include="wwwroot\Lessons\Lesson 4\" />
+    <Folder Include="wwwroot\Lessons\Lesson 3\" />
+    <Folder Include="wwwroot\Lessons\Lesson 2\" />
+    <Folder Include="wwwroot\quizes\" />
+  </ItemGroup>
+
+</Project>

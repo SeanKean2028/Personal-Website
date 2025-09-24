@@ -1,0 +1,2 @@
+In Lesson 1 you'll dive into the most basic foundation of C# and Unity -Data Types; Setup Unity, and Visual studio code; and learn the rule, syntax, and grammar of C#. 
+In this Unit you'll have a data types game, a learning video about data types in c#, a .Net fiddle demonstration, a data types quiz,  a .Net fiddle lab, a Unity setup tutorial video, and a Microsoft Visual Studio Code Setup tutorial video

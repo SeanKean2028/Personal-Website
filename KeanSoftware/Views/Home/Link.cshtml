@@ -1,0 +1,94 @@
+﻿@model KeanSoftware.Models.Link
+<style>
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px black;
+        border-radius: 10px;
+        scroll-margin-inline-start: 1rem;
+    }
+
+
+    .Title {
+        font-size: 200px;
+        text-align: center;
+        font-family: "Spicy Rice", serif;
+        font-style: normal;
+
+        color: ghostwhite;
+        text-shadow: 2px 2px 20px black;
+        text-decoration-color: red;
+    }
+
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        font-family: "Spicy Rice", serif;
+        color: ghostwhite;
+        font-style: italic;
+        text-shadow: 2px 2px 20px orangered;
+        text-decoration-color: red;
+    }
+
+    .spicy-rice-regular {
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+    }
+
+    .img {
+        height: 125px;
+        width: 250px;
+        image-shadow: 2px 2px 20px orangered;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .text {
+        margin-left: 60px; /* Space between text and buttons */
+        width: 50vw;
+        height: 500px;
+        border: 5px solid black;
+        background-color: black;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start; /* Align items to the top */
+    }
+</style>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color:darkseagreen">
+    <h1 style="align-content: center; align-items: center; align: center;">
+        @Model.linkName
+        @Model.link
+        @if (Model.sizeY == 1080 && Model.sizeX == 1920){
+            <iframe style="height: 600px; width: 1000px; margin-left:100px; margin-top: -100px;overflow: hidden;transform: scale(1); display: block;" src="@Model.link" scrolling="no" allowfullscreen="true"></iframe>
+        } 
+        @if(Model.sizeY == 1200){
+            <iframe style="height: 1200px; width: 1920px; margin-left:-300px;margin-top: -100px;overflow: hidden;transform: scale(0.75); display: block;" src="@Model.link" scrolling="no"></iframe>
+        }
+    </h1>
+        <button onclick="history.back()" style=" height:200px;width:500px;background-color:orangered; margin-left:+400px; text-shadow: 2px 2px 20px red; overflow: hidden; outline-color: black; outline-width: 30px;">
+            <h1 style="font-size: 60px; color:blue">
+                COMPLETE
+            </h1>
+        </button>
+</body>
+</html>
